@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:textSize="@dimen/text_sizeBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilla"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/displaySecondario"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+        <TextView
+            android:id="@+id/displayOperatore"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:textSize="@dimen/text_sizeBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/silver"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/displayPrincipale"
+            android:textAlignment="textEnd"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:textSize="@dimen/text_sizeBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilla"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Memory: "/>
+        <TextView
+            android:id="@+id/displayMemoria"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <GridLayout
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/silver"
+        android:columnCount="4"
+        android:rowCount="5">
+    <Button
+        android:onClick="clearPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonc"
+        android:text="C" />
+    <Button
+        android:onClick="mcpress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonmc"
+        android:text="MC" />
+    <Button
+        android:onClick="msPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonms"
+        android:text="MS" />
+    <Button
+        android:onClick="mrPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonmr"
+        android:text="MR" />
+
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button1"
+        android:text="1" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button2"
+        android:text="2" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button3"
+        android:text="3" />
+    <Button
+        android:onClick="OperatorPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonAddizione"
+        android:text="+" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button4"
+        android:text="4" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button5"
+        android:text="5" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button6"
+        android:text="6" />
+    <Button
+        android:onClick="OperatorPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonSottrazione"
+        android:text="-" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button7"
+        android:text="7" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button8"
+        android:text="8" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button9"
+        android:text="9" />
+    <Button
+        android:onClick="OperatorPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonMoltiplcazione"
+        android:text="*" />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonVirgola"
+        android:text="." />
+    <Button
+        android:onClick="NumberPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button0"
+        android:text="0" />
+    <Button
+        android:onClick="EqualPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonUguale"
+        android:text="=" />
+    <Button
+        android:onClick="OperatorPress"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonDivisione"
+        android:text="/" />
+    </GridLayout>
+    </LinearLayout>
+</RelativeLayout>
