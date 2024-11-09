@@ -1,0 +1,9 @@
+scrivere il codice di un'app android java  che abbia una tabella di 3 righe e 4 colonne.
+la seconda riga deve essere riempita con numeri casuali da 0 a 9
+la prima riga deve avere il numero della stessa colonna della riga due ma sottratto 1
+la terza riga deve avere il numero della stessa colonna della riga due ma addizionato di 1
+quando si avvia l'app la tabella deve essere vuota, la tabella viene riempita dopo un click su un bottone "Gioca"
+
+aggiungi un contatore del punteggio che conta il punteggio dell'utente così:
+quando nella riga centrale escono due numeri uguali, il punteggio aumenta di 10 punti, 3 numeri uguali 25 punti
+4 numeri uguali 50 punti
